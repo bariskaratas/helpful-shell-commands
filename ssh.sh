@@ -1,9 +1,6 @@
 # Create new ssh key
 ssh-keygen -t ed25519 -C "email@example.com"
 
-# Check if ssh-agent is running (in windows)
-eval "$(ssh-agent -s)"
-
 # Add a key into ssh-agent
 ssh-add ~/.ssh/id_ed25519
 

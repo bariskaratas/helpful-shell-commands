@@ -1,6 +1,6 @@
 #
 # Common PowerShell commands can be found at
-# https://docs.microsoft.com/en-us/azure/virtual-machines/windows/ps-common-ref
+#  https://docs.microsoft.com/en-us/azure/virtual-machines/windows/ps-common-ref
 #
 
 # connect
@@ -28,3 +28,13 @@ New-AzVm
 
 # disconnect
 Disconnect-AzAccount
+
+# install module 'Az' when needed
+Install-Module -Name Az -AllowClobber -Scope CurrentUser
+# import
+Import-Module -Name Az
+
+# When installation does not work then it can be installed via msi file too.
+# If it shows a warning that AzureRM cannot co-exist with installed package then this can be uninstalled via 
+#  (might be necessary to run as administrator)
+Uninstall-AzureRm
