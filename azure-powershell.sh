@@ -1,5 +1,5 @@
 #
-# Common PowerShell commands can be found on
+# Common PowerShell commands can be found at
 # https://docs.microsoft.com/en-us/azure/virtual-machines/windows/ps-common-ref
 #
 
