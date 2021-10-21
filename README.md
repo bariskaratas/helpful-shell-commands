@@ -1,2 +1,1 @@
-# helpful-shell-commands
-Helpful shell commands
+This document is a collection of some helpful commands :)
