@@ -22,7 +22,7 @@ ssh -T git@github.com
 # Connect to a server with a key
 ssh -i <private key path> user@99.88.77.66
 
-<<< USER MANAGEMENT >>>
+## USER MANAGEMENT ##
 
 # create home folder for a new user (before creating user account)
 sudo mkhomedir_helper <user2>
@@ -33,7 +33,7 @@ sudo adduser <user2>
 # set password for new user
 sudo passwd <user2>
 
-<<< MISC >>>
+## MISC ##
 
 # login as another user
 su - <user2>
