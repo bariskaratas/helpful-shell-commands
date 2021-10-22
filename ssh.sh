@@ -23,7 +23,7 @@ ssh -T git@github.com
 ssh -i <private key path> user@99.88.77.66
 
  ##
-### User Management
+### USER MANAGEMENT
  ##
 
 # create home folder for a new user (before creating user account)
@@ -35,12 +35,11 @@ sudo adduser <user2>
 # set password for new user
 sudo passwd <user2>
 
- ##
-### Misc
- ##
+❰❰ MISC ❱❱
 
 # login as another user
 su - <user2>
 
 # show details of os / distribution
 cat /etc/*-release
+
