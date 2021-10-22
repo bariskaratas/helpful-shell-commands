@@ -16,15 +16,15 @@ New-AzResourceGroup -Name <mygroup> -Location <EastUS>
 Get-AzVm
 
 # create a new vm
-New-AzVm 
-\ -ResourceGroupName <mygroup> 
-\ -Name <myvm> 
-\ -Location <EastUS> 
-\ -VirtualNetworkName <mynet> 
-\ -SubnetName <default> 
-\ -SecurityGroupName <mysecgroup>
-\ -PublicIpAddressname <mypublicip>
-\ -OpenPorts <port1, port2>
+New-AzVm \ 
+-ResourceGroupName <mygroup> \ 
+-Name <myvm> \ 
+-Location <EastUS> \ 
+-VirtualNetworkName <mynet> \ 
+-SubnetName <default> \ 
+-SecurityGroupName <mysecgroup> \ 
+-PublicIpAddressname <mypublicip> \ 
+-OpenPorts <port1, port2>
 
 # disconnect
 Disconnect-AzAccount
