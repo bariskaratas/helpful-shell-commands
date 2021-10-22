@@ -24,11 +24,8 @@ ssh -i <private key path> user@99.88.77.66
 
 ## USER MANAGEMENT ##
 
-# create home folder for a new user (before creating user account)
-sudo mkhomedir_helper <user2>
-
-# create a new user
-sudo adduser <user2>
+# create a new user with home directory
+sudo adduser -m <user2>
 
 # set password for new user
 sudo passwd <user2>
