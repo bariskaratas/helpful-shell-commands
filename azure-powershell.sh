@@ -36,5 +36,4 @@ Import-Module -Name Az
 
 # When installation does not work then it can be installed via msi file too.
 # If it shows a warning that AzureRM cannot co-exist with installed package then this can be uninstalled via 
-#  (might be necessary to run as administrator)
 Uninstall-AzureRm
