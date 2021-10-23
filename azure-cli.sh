@@ -18,6 +18,8 @@ az account set --subscription "aa-bb-cc-dd"
 
 # create a resource group
 az group create --name cligroup --location eastus
+# also possible
+az group create --name cliGroup --location "North Europe"
 
 # create a vm
 az vm create \
