@@ -10,6 +10,12 @@ az login
 # list subscriptions
 az account list
 
+# list as table 
+az account list --output table
+
+# switch subscription 
+az account set --subscription "aa-bb-cc-dd"
+
 # create a resource group
 az group create --name cligroup --location eastus
 
