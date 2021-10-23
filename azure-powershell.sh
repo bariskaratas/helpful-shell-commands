@@ -6,11 +6,20 @@
 # connect
 Connect-AzAccount
     
+# find commands
+get-command *AzWebApp*
+
 # set to a specific subscription
 Set-AzContext -Subscription "aaa-bbb-ccc-ddd-eee"
 
 # create a new resource group
 New-AzResourceGroup -Name <mygroup> -Location <EastUS>
+
+# create a new app service plan
+New-AzAppServicePlan -ResourceGroupName <resourceName> -Name <serviceName> -Location "EastUS" -Tier "Free" 
+
+# create a new web app (requires unique name as fully qualified domain name)
+New-AzWebbApp -ResourceGroupName <resourceName> -Name <webappName> -Location "EastUS" -AppServicePlan <servicePlan>
 
 # get vm
 Get-AzVm
@@ -28,6 +37,8 @@ New-AzVm \
 
 # disconnect
 Disconnect-AzAccount
+
+## MISC ##
 
 # install module 'Az' when needed
 Install-Module -Name Az -AllowClobber -Scope CurrentUser
