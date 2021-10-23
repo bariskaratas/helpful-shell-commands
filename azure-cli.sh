@@ -36,3 +36,6 @@ az wepapp create -g groupName -n webappName -p webappplanName
 
 # spin up a new webapp (within an exisiting html project)
 az webapp up --location eastus -name webappName --html
+
+# create a sql db
+az sql server create --name <server-name> --resource-group myResourceGroup --location "West Europe" --admin-user <db-username> --admin-password <db-password>
