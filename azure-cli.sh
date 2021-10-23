@@ -19,3 +19,12 @@ az vm create \
 --name aznewvm \
 --image win2016datadenter \
 --admin-username admin
+
+# create a new appservice plan (use 'g' as shortcut for group and 'n' for name)
+az apservice plan create --name -g groupName -n appserviceplanName
+
+# create a new webapp
+az wepapp create -g groupName -n webappName -p webappplanName
+
+# spin up a new webapp (within an exisiting html project)
+az webapp up --location eastus -name webappName --html
