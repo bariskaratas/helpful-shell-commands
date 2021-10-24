@@ -34,6 +34,9 @@ az apservice plan create --name -g groupName -n appserviceplanName
 # create a new webapp
 az wepapp create -g groupName -n webappName -p webappplanName
 
+# open firewall
+az sql server firewall-rule create --resource-group myResourceGroup --server <server-name> --name AllowAzureIps --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
+
 # spin up a new webapp (within an exisiting html project)
 az webapp up --location eastus -name webappName --html
 
