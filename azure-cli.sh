@@ -45,3 +45,7 @@ az webapp up --location eastus -name webappName --html
 
 # create a sql db
 az sql server create --name <server-name> --resource-group myResourceGroup --location "West Europe" --admin-user <db-username> --admin-password <db-password>
+
+# create a database
+az sql db create --resource-group myResourceGroup --server <server-name> --name coreDB --service-objective S0
+
