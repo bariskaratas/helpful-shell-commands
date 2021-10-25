@@ -31,6 +31,8 @@ az vm create \
 # create a new appservice plan (use 'g' as shortcut for group and 'n' for name)
 az apservice plan create --name -g groupName -n appserviceplanName
 
+## SQL ##
+
 # create a new webapp
 az wepapp create -g groupName -n webappName -p webappplanName
 
@@ -49,3 +51,5 @@ az sql server create --name <server-name> --resource-group myResourceGroup --loc
 # create a database
 az sql db create --resource-group myResourceGroup --server <server-name> --name coreDB --service-objective S0
 
+# create a connection string
+az sql db show-connection-string --client ado.net --server <server-name> --name coreDB
