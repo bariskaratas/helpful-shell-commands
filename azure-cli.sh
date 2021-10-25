@@ -51,5 +51,5 @@ az sql server create --name <server-name> --resource-group myResourceGroup --loc
 # create a database
 az sql db create --resource-group myResourceGroup --server <server-name> --name coreDB --service-objective S0
 
-# create a connection string
+# retrieve a connection string
 az sql db show-connection-string --client ado.net --server <server-name> --name coreDB
