@@ -1,1 +1,2 @@
-
+# show details of os / distribution
+cat /etc/*-release
