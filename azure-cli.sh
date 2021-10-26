@@ -54,3 +54,9 @@ az sql db create --resource-group myResourceGroup --server <server-name> --name 
 
 # retrieve a connection string
 az sql db show-connection-string --client ado.net --server <server-name> --name coreDB
+
+
+## DEPLOYMENTS ##
+
+# create a deployment user
+az webapp deployment user set --user-name <username> --password <password>
