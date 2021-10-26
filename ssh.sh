@@ -34,7 +34,3 @@ sudo passwd <user2>
 
 # login as another user
 su - <user2>
-
-# show details of os / distribution
-cat /etc/*-release
-
