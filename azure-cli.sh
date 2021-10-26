@@ -31,6 +31,7 @@ az vm create \
 # create a new appservice plan (use 'g' as shortcut for group and 'n' for name)
 az apservice plan create --name -g groupName -n appserviceplanName
 
+
 ## SQL ##
 
 # create a new webapp
