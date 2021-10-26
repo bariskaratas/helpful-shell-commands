@@ -7,3 +7,5 @@ eval "$(ssh-agent -s)"
 #  Strong Name CSP with the following key container name: VS_KEY_3E185446540E7F7A
 sn -i <KeyFile> <ContainerName>
 
+# find domain by ip address
+nslookup.exe <ip-address>
