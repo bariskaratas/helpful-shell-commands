@@ -36,6 +36,8 @@ az apservice plan create --name -g groupName -n appserviceplanName
 
 # create a new webapp
 az wepapp create -g groupName -n webappName -p webappplanName
+# or like this within an app service plan
+az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app-name> --runtime 'DOTNET|5.0' --deployment-local-git
 
 # create a new firewall rule
 az sql server firewall-rule create --resource-group myResourceGroup --server <server-name> --name AllowAzureIps --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
