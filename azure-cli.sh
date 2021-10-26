@@ -65,5 +65,9 @@ az webapp deployment user set --user-name <username> --password <password>
 
 # list runtimes
 az webapp list-runtimes 
+
 # list runtimes for linux
 az webapp list-runtimes --linux
+
+# set a connection string 
+az webapp config connection-string set --resource-group myResourceGroup --name <app-name> --settings MyDbConnection='<connection-string>' --connection-string-type SQLAzure
