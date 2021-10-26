@@ -60,3 +60,8 @@ az sql db show-connection-string --client ado.net --server <server-name> --name 
 
 # create a deployment user
 az webapp deployment user set --user-name <username> --password <password>
+
+# list runtimes
+az webapp list-runtimes 
+# list runtimes for linux
+az webapp list-runtimes --linux
