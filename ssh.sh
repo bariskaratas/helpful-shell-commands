@@ -21,16 +21,3 @@ ssh -T git@github.com
 
 # Connect to a server with a key
 ssh -i <private key path> user@99.88.77.66
-
-## USER MANAGEMENT ##
-
-# create a new user with home directory
-sudo adduser -m <user2>
-
-# set password for new user
-sudo passwd <user2>
-
-## MISC ##
-
-# login as another user
-su - <user2>
