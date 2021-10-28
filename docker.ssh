@@ -1,0 +1,2 @@
+# pull an image
+docker pull mcr.microsoft.com/hello-world
