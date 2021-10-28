@@ -71,3 +71,16 @@ az webapp list-runtimes --linux
 
 # set a connection string 
 az webapp config connection-string set --resource-group myResourceGroup --name <app-name> --settings MyDbConnection='<connection-string>' --connection-string-type SQLAzure
+
+
+## DOCKER INTEGRATION ##
+
+# install helm
+az acr helm install-cli --yes
+# set path in env
+
+
+## MISC ##
+
+# check connectivity to acr
+az acr check-health -n <acrName> --yes
