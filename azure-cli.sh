@@ -79,6 +79,8 @@ az webapp config connection-string set --resource-group myResourceGroup --name <
 az acr helm install-cli --yes
 # set path in env
 
+# list images 
+az acr repository list --name <acrName> --output table
 
 ## MISC ##
 
