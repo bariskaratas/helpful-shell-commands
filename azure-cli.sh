@@ -82,6 +82,9 @@ az acr helm install-cli --yes
 # list images 
 az acr repository list --name <acrName> --output table
 
+# enable admin
+az acr update -n <acrName> --admin-enabled true
+
 ## MISC ##
 
 # check connectivity to acr
