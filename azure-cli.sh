@@ -85,6 +85,9 @@ az acr repository list --name <acrName> --output table
 # enable admin
 az acr update -n <acrName> --admin-enabled true
 
+# list credentials 
+az acr credential show -n <acrName>
+
 ## MISC ##
 
 # check connectivity to acr
