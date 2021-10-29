@@ -17,16 +17,24 @@ az account list --output table
 az account set --subscription "aa-bb-cc-dd"
 
 # create a resource group
-az group create --name cligroup --location eastus
+az group create --name cliGroup --location eastus
 # also possible
 az group create --name cliGroup --location "North Europe"
 
-# create a vm
+# create a vm (windows)
 az vm create \
 --resource-group cligroup \
 --name aznewvm \
 --image win2016datadenter \
 --admin-username admin
+
+# create a vm (linux)
+az vm create \
+  --resource-group myResourceGroup \
+  --name myVM \
+  --image UbuntuLTS \
+  --admin-username azureuser \
+  --generate-ssh-keys
 
 # create a new appservice plan (use 'g' as shortcut for group and 'n' for name)
 az apservice plan create --name -g groupName -n appserviceplanName
