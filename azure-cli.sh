@@ -36,6 +36,14 @@ az vm create \
   --admin-username azureuser \
   --generate-ssh-keys
 
+# create a vm and provide own ssh key to use
+az vm create \
+  --resource-group myResourceGroup \
+  --name myVM \
+  --image UbuntuLTS \
+  --admin-username azureuser \
+  --ssh-key-values mysshkey.pub
+
 # create a new appservice plan (use 'g' as shortcut for group and 'n' for name)
 az apservice plan create --name -g groupName -n appserviceplanName
 
