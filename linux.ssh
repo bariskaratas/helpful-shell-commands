@@ -14,3 +14,6 @@ su - <user2>
 
 # show details of os / distribution
 cat /etc/*-release
+
+# change port of ssh in /etc/ssh/sshd_config and restart service
+sudo systemctl restart sshd
