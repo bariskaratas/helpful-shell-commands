@@ -17,3 +17,9 @@ sn -i <KeyFile> <ContainerName>
 
 # find domain by ip address
 nslookup.exe <ip-address>
+
+
+## WSL ##
+
+# use v2
+wsl --set-default-version 2
