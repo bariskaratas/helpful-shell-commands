@@ -48,7 +48,7 @@ az vm create \
   --ssh-key-values mysshkey.pub
 
 # create a new appservice plan (use 'g' as shortcut for group and 'n' for name)
-az apservice plan create --name -g groupName -n appserviceplanName
+az appservice plan create --name -g groupName -n appserviceplanName
 
 
 ## SQL ##
