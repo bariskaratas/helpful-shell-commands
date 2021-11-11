@@ -10,6 +10,12 @@ sudo passwd <user2>
 su - <user2>
 
 
+## BEAUTIFY ##
+
+# json
+python3 -m json.tool
+
+
 ## MISC ##
 
 # show details of os / distribution
