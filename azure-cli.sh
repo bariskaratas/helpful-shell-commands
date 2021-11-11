@@ -13,6 +13,9 @@ az account list
 # list as table 
 az account list --output table
 
+# show default subscription
+az account show
+
 # switch subscription 
 az account set --subscription "aa-bb-cc-dd"
 
