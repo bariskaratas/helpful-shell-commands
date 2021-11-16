@@ -6,6 +6,12 @@ tmux ls
 # kill session
 tmux kill-session -t <id>
 
+# detach client
+tmux detach-client
+
+# attach client
+tmux attach
+
 # Create a new window (with shell)
 Ctrl+b c 
 
