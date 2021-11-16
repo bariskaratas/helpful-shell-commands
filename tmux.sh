@@ -21,29 +21,32 @@ Ctrl+b [
 # show pane ids
 Ctrl+b q
 
-# Create a new window (with shell)
+# create a new window (with shell)
 Ctrl+b c 
 
-# Choose window from a list
+# choose window from a list
 Ctrl+b w 
 
-# Switch to window 0 (by number )
+# switch to window 0 (by number )
 Ctrl+b 0 
 
-# Rename the current window
+# swap pane
+tmux swap-pane -s <source> -t <target>
+
+# rename the current window
 Ctrl+b , 
 
-# Go to the next pane
+# go to the next pane
 Ctrl+b o 
 
-# Toggle between the current and previous pane
+# toggle between the current and previous pane
 Ctrl+b ; 
 
-# Close the current pane
+# close the current pane
 Ctrl+b x 
 
-# Split current pane horizontally into two panes
+# split current pane horizontally into two panes
 Ctrl+b % 
 
-# Split current pane vertically into two panes
+# split current pane vertically into two panes
 Ctrl+b "
