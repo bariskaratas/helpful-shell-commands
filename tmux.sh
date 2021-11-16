@@ -12,6 +12,15 @@ tmux detach-client
 # attach client
 tmux attach
 
+# kill pane
+tmux kill-pane <id>
+
+# scroll within pane 
+Ctrl+b [
+
+# show pane ids
+Ctrl+b q
+
 # Create a new window (with shell)
 Ctrl+b c 
 
