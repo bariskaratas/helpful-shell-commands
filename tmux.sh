@@ -1,5 +1,11 @@
 # Below are some most common commands for managing Tmux windows and panes:
 
+# list sessions
+tmux ls
+
+# kill session
+tmux kill-session -t <id>
+
 # Create a new window (with shell)
 Ctrl+b c 
 
@@ -12,12 +18,6 @@ Ctrl+b 0
 # Rename the current window
 Ctrl+b , 
 
-# Split current pane horizontally into two panes
-Ctrl+b % 
-
-# Split current pane vertically into two panes
-Ctrl+b " 
-
 # Go to the next pane
 Ctrl+b o 
 
@@ -26,3 +26,9 @@ Ctrl+b ;
 
 # Close the current pane
 Ctrl+b x 
+
+# Split current pane horizontally into two panes
+Ctrl+b % 
+
+# Split current pane vertically into two panes
+Ctrl+b "
