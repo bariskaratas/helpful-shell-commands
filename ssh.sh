@@ -21,3 +21,6 @@ ssh -T git@github.com
 
 # Connect to a server with a key
 ssh -i <private key path> user@99.88.77.66
+
+# connect and debug via openssl
+openssl debug s_client -connect bitbucket.org:443
