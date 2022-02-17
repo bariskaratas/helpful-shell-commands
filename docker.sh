@@ -10,11 +10,14 @@ docker tag mcr.microsoft.com/hello-world <acrName>.azurecr.io/hello-world:v1
 # push an image to acr
 docker push <acrName>.azurecr.io/hello-world:v1
 
-# Fix error => ERROR: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock
-sudo chmod 666 /var/run/docker.sock
-
 # see all processes
 docker ps 
 
 # see logs for a specific container 
 docker logs -f <container-id>
+
+
+## TROUBLESHOOTING ##
+
+# Fix error => ERROR: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock
+sudo chmod 666 /var/run/docker.sock
