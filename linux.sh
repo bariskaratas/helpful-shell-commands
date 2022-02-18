@@ -23,3 +23,6 @@ cat /etc/*-release
 
 # change port of ssh in /etc/ssh/sshd_config and restart service
 sudo systemctl restart sshd
+
+# export variable from file (file includes export name=value)
+. <file>
