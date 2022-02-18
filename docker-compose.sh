@@ -1,6 +1,9 @@
 # Stop the container(s) using the following command:
 docker-compose down
 
+# stop all running containers
+docker stop $(docker ps -a -q)
+
 # Delete all containers using the following command:
 docker rm -f $(docker ps -a -q)
 
