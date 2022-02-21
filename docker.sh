@@ -27,6 +27,8 @@ docker ps
 # see logs for a specific container 
 docker logs -f <container-id>
 
+# delete image
+docker image rm <id>
 
 ## TROUBLESHOOTING ##
 
