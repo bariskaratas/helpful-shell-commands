@@ -1,3 +1,14 @@
+## BUILD AND RUN
+
+# build the docker image
+docker build -t <image-name> .
+
+# run the docker image
+docker run -d --name <name> -p 80:80 <name> 
+
+
+## MISC
+
 # show local images
 docker images
 
